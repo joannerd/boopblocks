@@ -1,10 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: black; */
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.synth-container {
+body h1 {
+  text-shadow: 1px 1px 10px rgb(97, 97, 97);
+}
+
+#synth-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,21 +17,28 @@ body {
   z-index: 100;
 }
 
-.synth-container * {
-  margin: 20px;
+#synth-container * {
+  margin: 3% 10% 3% 10%;
   padding: 0;
-  flex: 0, 1, auto;
   width: 500;
   height: 500;
 }
 
 .synth path:hover {
   opacity: 0.7;
-  color: rgba(61, 175, 86, 0)
 }
 
 .synth * {
-  border: 2px solid black;
+  box-shadow: 1px 1px 10px black;
+  /* border: 2px solid black; */
   border-radius: 20px;
   padding: 0;
+}
+
+.fade {
+  opacity: 0.7
+}
+
+.synth path {
+  border: 0px;
 }
