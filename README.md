@@ -1,2 +1,2 @@
 # BoopBlocks
-BoopBlocks is a browser instrument inspired overlapping of percussive hits at different speeds.
+BoopBlocks is an educational browser instrument inspired by musical hemiolas and polyrhythms.
