@@ -1,0 +1,21 @@
+{
+  "name": "woodthatsings",
+  "version": "1.0.0",
+  "description": "Wood that Sings is a browser instrument inspired by the warm rosewood sound of a concert marimba.",
+  "main": "woodthatsings.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junnac/woodthatsings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junnac/woodthatsings/issues"
+  },
+  "homepage": "https://github.com/junnac/woodthatsings#readme"
+}

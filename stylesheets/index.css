@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: black; */
+}
+
+.synth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+.synth-container * {
+  margin: 20px;
+  padding: 0;
+  flex: 0, 1, auto;
+  width: 500;
+  height: 500;
+}
+
+.synth path:hover {
+  opacity: 0.7;
+  color: rgba(61, 175, 86, 0)
+}
+
+.synth * {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0;
+}
