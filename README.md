@@ -1,2 +1,2 @@
-# Wood that Sings
-Wood that Sings is a browser instrument inspired by the warm rosewood sound of a concert marimba.
+# BoopBlocks
+BoopBlocks is a browser instrument inspired overlapping of percussive hits at different speeds.
