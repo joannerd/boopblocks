@@ -32,8 +32,12 @@ body p {
   height: 500;
 }
 
-.synth path:hover, .opaq {
+.synth path:hover {
   opacity: 0.7;
+}
+
+.opaq {
+  opacity: 0.3;
 }
 
 .synth * {
@@ -43,7 +47,7 @@ body p {
   padding: 0;
 }
 
-.synth polygon:hover {
+.synth polygon:hover, #master-play:hover {
   opacity: 0.5;
   cursor: pointer;
 }
