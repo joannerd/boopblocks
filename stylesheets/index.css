@@ -35,12 +35,22 @@ body p {
   position: absolute;
   top: 0;
   right: 75px;
+  box-shadow: 1px 1px 5px black;
 }
 
 #mute:hover {
   cursor: pointer;
   background: black;
   color: white;
+}
+
+#after-mute {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  width: 260px;
+  height: 75px;
+  text-align: right;
 }
 
 #synth-container {
