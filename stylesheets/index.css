@@ -7,19 +7,11 @@ body {
 
 body h1 {
   text-shadow: 1px 1px 10px rgb(97, 97, 97);
-  font-weight: normal;
-  letter-spacing: 0.2em
+  font-weight: normal
 }
 
-body p {
+body h1, body p {
   letter-spacing: 0.2em
-}
-
-.keys {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 #mute {
@@ -35,7 +27,9 @@ body p {
   position: absolute;
   top: 0;
   right: 75px;
+  margin-right: 5%;
   box-shadow: 1px 1px 5px black;
+  letter-spacing: 0.1em
 }
 
 #mute:hover {
@@ -48,9 +42,9 @@ body p {
   position: absolute;
   top: 50px;
   right: 5px;
-  width: 260px;
-  height: 75px;
-  text-align: right;
+  margin-right: 5%;
+  width: 200px;
+  letter-spacing: 0.25em
 }
 
 #synth-container {
