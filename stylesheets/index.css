@@ -3,6 +3,9 @@ body {
   padding: 0;
   text-align: center;
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 body h1 {
@@ -14,20 +17,43 @@ body h1, body p {
   letter-spacing: 0.2em
 }
 
+.social-icons {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.fab {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 50px;
+  padding: 5px;
+}
+
+.fab:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.mute-box {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
 #mute {
   border-radius: 5px;
   align-self: center;
   padding: 5px 10px 5px 10px;
   height: 20px;
   border: 1px solid grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: absolute;
-  top: 0;
-  right: 75px;
-  margin-right: 5%;
   box-shadow: 1px 1px 5px black;
   letter-spacing: 0.1em
 }
@@ -39,12 +65,19 @@ body h1, body p {
 }
 
 #after-mute {
-  position: absolute;
-  top: 50px;
-  right: 5px;
-  margin-right: 5%;
   width: 200px;
   letter-spacing: 0.25em
+}
+
+.boopblocks {
+  flex-grow: 2;
+}
+
+.keys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #synth-container {
@@ -84,4 +117,8 @@ body h1, body p {
 .synth polygon:hover, #master-play:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.fab {
+  font-size: 20px;
 }

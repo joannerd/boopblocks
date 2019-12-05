@@ -4,20 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./stylesheets/index.css" />
   <link rel='icon' href='favicon.ico' type='image/x-icon'/>
-
   <script src="./d3/d3.min.js"></script>
   <title>Boop Blocks</title>
+  <script src="https://kit.fontawesome.com/51da45b07a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./stylesheets/index.css" />
 </head>
 <body>
 
-  <div class="keys">
-    <h1>Boop Blocks</h1>
-    <p>Play all</p>
-    <svg height="50" width="50">
-      <polygon id="master-play" points="40,20 10,40 10,0" style="fill:black;stroke:black;stroke-width:1" />
-    </svg>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/xchenj/" class="fab fa-linkedin" target="_blank"
+      rel="noopener noreferrer"></a>
+    <a href="https://angel.co/xchenj" class="fab fa-angellist" target="_blank" rel="noopener noreferrer"></a>
+    <a href="https://github.com/junnac" class="fab fa-github" target="_blank" rel="noopener noreferrer"></a>
+    <a href="mailto:x.chenj@gmail.com" class="fab fa-google" target="_blank" rel="noopener noreferrer"></a>
+  </div>
+
+  <div class="boopblocks">
+    <div class="keys">
+      <h1>Boop Blocks</h1>
+      <p>Play all</p>
+      <svg height="50" width="50">
+        <polygon id="master-play" points="40,20 10,40 10,0" style="fill:black;stroke:black;stroke-width:1" />
+      </svg>
+      <p>Hover over or click a box to make it boop!</p>
+      <p>Look at each block one at a time.</p>
+      <p>Watch its pulse - internalize it.</p>
+    </div>
+
+    <div id="synth-container">
+      <div class="synth" id="synth1" data-frequency="329.63"></div>
+      <div class="synth" id="synth2" data-frequency="523.25"></div>
+      <div class="synth" id="synth3" data-frequency="349.23"></div>
+      <div class="synth" id="synth4" data-frequency="261.63"></div>
+      <div class="synth" id="synth5" data-frequency="392.00"></div>
+      <div class="synth" id="synth6" data-frequency="349.23"></div>
+      <div class="synth" id="synth7" data-frequency="329.63"></div>
+      <div class="synth" id="synth8" data-frequency="261.63"></div>
+      <div class="synth" id="synth9" data-frequency="523.25"></div>
+    </div>
+  </div>
+
+  <div class="mute-box">
     <p id="mute">Mute</p>
     <p id="after-mute">
       Add each block<br />
@@ -26,21 +54,6 @@
       polyrhythm<br />
       boop!
     </p>
-    <p>Hover over or click a box to make it boop!</p>
-    <p>Look at each block one at a time.</p>
-    <p>Watch its pulse - internalize it.</p>
-  </div>
-
-  <div id="synth-container">
-    <div class="synth" id="synth1" data-frequency="329.63"></div>
-    <div class="synth" id="synth2" data-frequency="523.25"></div>
-    <div class="synth" id="synth3" data-frequency="349.23"></div>
-    <div class="synth" id="synth4" data-frequency="261.63"></div>
-    <div class="synth" id="synth5" data-frequency="392.00"></div>
-    <div class="synth" id="synth6" data-frequency="349.23"></div>
-    <div class="synth" id="synth7" data-frequency="329.63"></div>
-    <div class="synth" id="synth8" data-frequency="261.63"></div>
-    <div class="synth" id="synth9" data-frequency="523.25"></div>
   </div>
   
   <script src="./lib/synth.js"></script>
