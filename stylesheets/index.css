@@ -27,12 +27,12 @@ body h1, body p {
   justify-content: left;
 }
 
-.fab {
+.fab, .fa {
   color: black;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 50px;
   padding: 5px;
+  font-size: 20px;
 }
 
 .fab:hover {
