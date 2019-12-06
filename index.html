@@ -12,7 +12,12 @@
 </head>
 <body>
 
-  <div class="social-icons">
+  <div id="social-icons">
+    <div class="modes">
+      <li id="light"></li>
+      <li id="color"></li>
+      <li id="dark"></li>
+    </div>
     <a href="https://www.linkedin.com/in/xchenj/" class="fab fa-linkedin" target="_blank"
       rel="noopener noreferrer"></a>
     <a href="https://angel.co/xchenj" class="fab fa-angellist" target="_blank" rel="noopener noreferrer"></a>
@@ -20,11 +25,11 @@
     <a href="mailto:x.chenj@gmail.com" class="fa fa-envelope" target="_blank" rel="noopener noreferrer"></a>
   </div>
 
-  <div class="boopblocks">
+  <div id="boopblocks">
     <div class="keys">
       <h1>Boop Blocks</h1>
       <h4>by Joanna Chen</h4>
-      <div class="play-pause">
+      <div id="play-pause">
         <svg height="20" width="20">
           <polygon id="master-play" points="20,10 5,20 5,0" style="fill:black;" />
         </svg>
@@ -50,13 +55,14 @@
       <li>Click anywhere to begin</li>
       <li>Observe and internalize each block's pulse</li>
       <li>Click pause</li>
-      <li>Hover over or click a block to make it boop!</li>
-      <li>One-by-one, click play on each block to build your own polyrhythm boop!</li>
+      <li>Hover over or click a block to make it boop</li>
+      <li>One-by-one, click play on each block to build your own polyrhythmic boop!</li>
     </ol>
   </div>
   
   <script src="./lib/synth.js"></script>
   <script src="./lib/soundwave.js"></script>
+  <script src="./lib/ui_mode.js"></script>
   
 </body>
 <footer>

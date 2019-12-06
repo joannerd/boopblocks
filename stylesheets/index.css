@@ -6,8 +6,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: url(1789225.png) no-repeat;
-  background-size: cover;
+  background: url(color.png) no-repeat;
+  background-size: cover 100% 100%;
+  color: black;
+}
+
+body.dark {
+  background: url(dark.jpg) no-repeat;
+  background-size: cover 100% 100%;
+  color: white;
+}
+
+body.light {
+  background: url(minimalistic.jpg) repeat-x rgb(225, 230, 233);
+  background-size: cover 100% 100%;
 }
 
 .boopblocks h1, .boopblocks h4 {
@@ -20,7 +32,7 @@ body {
   letter-spacing: 0.2em
 }
 
-.social-icons {
+#social-icons {
   position: fixed;
   top: 0;
   left: 0;
@@ -33,8 +45,27 @@ body {
   line-height: 2em;
 }
 
-.fab, .fa, .fas {
+#social-icons.dark {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#social-icons.light {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#social-icons a {
   color: white;
+}
+
+#social-icons.dark a {
+  color: white;
+}
+
+#social-icons.light a {
+  color: black;
+}
+
+.fab, .fa, .fas {
   text-decoration: none;
   transition: 0.3s;
   padding: 10px;
@@ -46,11 +77,66 @@ body {
   cursor: pointer;
 }
 
-.play-pause {
+.modes {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modes li {
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.modes li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#dark {
+  background: black;
+}
+
+#dark.dark {
+  box-shadow: 1px 1px 3px white;
+  border: 1px solid white;
+}
+
+#light {
+  background: white;
+}
+
+#light.light {
+  box-shadow: 1px 1px 3px black;
+  border: 1px solid black;
+}
+
+#color {
+  background: linear-gradient(to bottom right, rgb(0, 128, 96), rgb(255, 30, 0));
+}
+
+#color.color {
+  box-shadow: 1px 1px 3px white;
+  border: 1px solid white;
+}
+
+#play-pause {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 70px;
+}
+
+#play-pause.dark {
+  background: white;
+  border-radius: 20px;
+  padding: 5px 5px 5px 10px;
 }
 
 #mute {
@@ -87,10 +173,6 @@ body {
   padding: 10px;
 }
 
-.boopblocks {
-  flex-grow: 3;
-}
-
 .keys {
   display: flex;
   flex-direction: column;
@@ -107,11 +189,22 @@ body {
   margin: 0 20% 0 20%;
 }
 
+#synth-container.dark * {
+  background: rgba(50, 50, 50, 0.5);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border-radius: 20px;
+}
+#synth-container.light * {
+  -webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+
 .synth {
   padding: 0;
   width: 500;
   height: 500;
-  margin: 5% 10% 5% 10%;
+  margin: 5%;
 }
 
 .synth path, .synth polygon, #master-play, #mute {
@@ -130,8 +223,4 @@ body {
   box-shadow: 1px 1px 10px black;
   border-radius: 20px;
   padding: 0;
-}
-
-.fab {
-  font-size: 20px;
 }
