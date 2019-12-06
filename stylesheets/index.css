@@ -6,71 +6,89 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background: url(1789225.png) no-repeat;
+  background-size: cover;
 }
 
-body h1 {
+.boopblocks h1, .boopblocks h4 {
   text-shadow: 1px 1px 10px rgb(97, 97, 97);
-  font-weight: normal
+  font-weight: normal;
+  margin: 15px;
 }
 
-body h1, body p {
+.boopblocks h1, .boopblocks h4, .boopblocks p {
   letter-spacing: 0.2em
 }
 
 .social-icons {
   position: fixed;
-  top: 2%;
-  left: 2%;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  line-height: 2em;
 }
 
-.fab, .fa {
-  color: black;
+.fab, .fa, .fas {
+  color: white;
   text-decoration: none;
   transition: 0.3s;
-  padding: 5px;
+  padding: 10px;
   font-size: 20px;
 }
 
-.fab:hover {
+.fab:hover, .fa:hover, .fas:hover, .synth polygon:hover, #master-play:hover {
   opacity: 0.3;
   cursor: pointer;
 }
 
-.mute-box {
-  position: fixed;
-  top: 2%;
-  right: 2%;
+.play-pause {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
 }
 
 #mute {
-  border-radius: 5px;
-  align-self: center;
-  padding: 5px 10px 5px 10px;
   height: 20px;
-  border: 1px solid grey;
-  box-shadow: 1px 1px 5px black;
-  letter-spacing: 0.1em
+  width: 20px;
+  font-size: 20px;
+  color: black;
 }
 
-#mute:hover {
-  cursor: pointer;
-  background: black;
-  color: white;
-}
-
-#after-mute {
+.description {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 200px;
-  letter-spacing: 0.25em
+  height: 100%;
+  letter-spacing: 0.25em;
+  text-align: left;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0;
+  height: 70%;
+}
+
+.description li {
+  padding: 10px;
 }
 
 .boopblocks {
-  flex-grow: 2;
+  flex-grow: 3;
 }
 
 .keys {
@@ -89,11 +107,11 @@ body h1, body p {
   margin: 0 20% 0 20%;
 }
 
-#synth-container * {
-  margin: 3% 10% 3% 10%;
+.synth {
   padding: 0;
   width: 500;
   height: 500;
+  margin: 5% 10% 5% 10%;
 }
 
 .synth path, .synth polygon, #master-play, #mute {
@@ -112,11 +130,6 @@ body h1, body p {
   box-shadow: 1px 1px 10px black;
   border-radius: 20px;
   padding: 0;
-}
-
-.synth polygon:hover, #master-play:hover {
-  opacity: 0.5;
-  cursor: pointer;
 }
 
 .fab {
