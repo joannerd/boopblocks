@@ -9,6 +9,7 @@ body {
   background: url(color.png) no-repeat;
   background-size: cover 100% 100%;
   color: black;
+  letter-spacing: 0.2em;
 }
 
 body.dark {
@@ -22,14 +23,13 @@ body.light {
   background-size: cover 100% 100%;
 }
 
-.boopblocks h1, .boopblocks h4 {
-  text-shadow: 1px 1px 10px rgb(97, 97, 97);
+h1, h4 {
   font-weight: normal;
-  margin: 15px;
 }
 
-.boopblocks h1, .boopblocks h4, .boopblocks p {
-  letter-spacing: 0.2em
+.boopblocks h1, .boopblocks h4 {
+  text-shadow: 1px 1px 10px rgb(97, 97, 97);
+  margin: 15px;
 }
 
 #social-icons {
