@@ -3,4 +3,4 @@ BoopBlocks is an interactive browser instrument that teaches users about musical
 
 I utilized D3.js to create dynamic SVG elements that allow intuitive user interaction with Web Audio API. I also implemented logic with Vanilla DOM and JavaScript that initiates sound and animates a graphic representation of a polyrhythm for a dynamic user experience.
 
-![Screen Shot 2019-12-01 at 3 32 56 PM](https://user-images.githubusercontent.com/32081352/69923588-ec29dc80-145a-11ea-99d2-276217d4a1e4.png)
+![boopblock](https://user-images.githubusercontent.com/32081352/70652047-c93fbb00-1c06-11ea-986d-facc1c3f6c20.gif)
