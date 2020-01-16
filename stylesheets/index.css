@@ -6,21 +6,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: url(color.png) no-repeat;
-  background-size: cover 100% 100%;
+  background: url(color.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: black;
   letter-spacing: 0.2em;
 }
 
 body.dark {
-  background: url(dark.jpg) no-repeat;
-  background-size: cover 100% 100%;
+  background: url(dark.jpg);
   color: white;
 }
 
 body.light {
-  background: url(minimalistic.jpg) repeat-x rgb(225, 230, 233);
-  background-size: cover 100% 100%;
+  background: url(minimalistic.jpg) rgb(225, 230, 233);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1, h4 {
@@ -223,4 +224,16 @@ h1, h4 {
   box-shadow: 1px 1px 10px black;
   border-radius: 20px;
   padding: 0;
+}
+
+@media only screen and (max-width: 650px) { 
+  .description {
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .description {
+    display: none;
+  }
 }
